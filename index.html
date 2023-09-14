@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</head>
+<body>
+    <h1>Guess the Phrase 😭</h1>
+    <h2> I Forgot, Please Help me 🙏</h2>
+    <h3>This is text I have 👇 (Use hint to swap the a letter to get on the correct position)</h3>
+
+    <div class="currentSentence">
+        <h1 id="Phrase"></h1>
+    </div>
+    Guess the Phrase : <input type="text" id="mainStr">
+    <button id="Submit" onclick="check()">Guess It!</button> 
+    <br>
+    <div>
+        <input id="guessString" placeholder="Call me, in some other way!">
+        <button id="HintButton" onclick="nameHint()">Next Hint</button> 
+        <button id="free" onclick="freeHint()">Free Hint (10)</button> 
+    </div>
+    
+    
+    <p id="approve"></p>
+    <h3>Total Hints Used : <span id="score">0</span></h3>
+    
+    <script src="main.js"></script>
+</body>
+</html>
