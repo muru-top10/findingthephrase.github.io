@@ -39,9 +39,11 @@ var done = new Array(myPattu.length).fill(0);
 
 
 function check(){
-    let guess = document.getElementById("inputStr").value;
-    if(myPattu == guess) alert("🥳🥳🥳🥳🥳🥳Wow, Awesome d chellam.....   Love you lot....🥳🥳🥳🥳🥳🥳🥳🥳");
+    let guess = document.getElementById("mainStr").value;
+    let x = myPattu.toLowerCase();
+    if(x == guess) alert("🥳🥳🥳🥳🥳🥳Wow, Awesome d chellam.....   Love you lot....🥳🥳🥳🥳🥳🥳🥳🥳");
     else alert("🥺 Pattu ma, try again 🥺");
+    document.getElementById("mainStr").value= "";
 }
 
 function nameHint(){
